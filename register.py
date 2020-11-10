@@ -14,8 +14,8 @@ def test():
 
 @app.route('/post', methods=['POST'])
 def post():
-    params = {'c_name': request.form['c_name'],'email': request.form['email']}
-    new_user_id = db.execute(text("INSERT INTO inform (c_name, email) VALUES (:c_name, :email)"), params).lastrowid
+    params = {'c_name': request.form['c_name'], 'email': request.form['email'], 'agree': request.form['agree']}
+    new_user_id = db.execute(text("INSERT INTO inform (c_name, email, agree) VALUES (:c_name, :email, :agree)"), params).lastrowid
     return  "구독 성공!"
 
 
