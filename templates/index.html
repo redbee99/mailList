@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+</head>
+<body>
+    <form action="/post" method="post">
+        <label><input id='agree' type="checkbox" value='YES' name="agree"> 개인정보이용동의</label>
+        <input id='agreeHidden' type='hidden' value='No' name='agree'>
+        <p>이름 : <input type="text" name="c_name"></p>
+        <p>이메일 : <input type="text" name="email"></p>
+        <input type="submit" value="전송">
+    </form>
+    <script type="application/javascript">
+        if(document.getElementById("agree").checked) {
+            document.getElementById('agreeHidden').disabled = true;
+        }
+    </script>
+</body>
+</html>
