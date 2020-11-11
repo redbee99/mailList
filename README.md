@@ -1,3 +1,11 @@
+# 환경 구축
+1. python 3.8 설치
+2. pip install flask
+3. pip install sqlalchemy
+4. pip install pymysql
+5. pip install mysql
+6. pip install mysql-connector-python
+
 # 메일링 리스트에 이메일을 등록하는 (subscribe) API
 1. 터미널에서 python register.py 실행
 2. 터미널에 나오는 주소 복사
